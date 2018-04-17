@@ -8,7 +8,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        timeout(time: 23)
+        echo 'i\'m a test'
       }
     }
     stage('package') {
@@ -18,7 +18,7 @@ pipeline {
     }
     stage('deploy') {
       steps {
-        timestamps()
+        echo 'i\'m deploying'
       }
     }
   }
